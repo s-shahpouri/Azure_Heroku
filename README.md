@@ -8,6 +8,12 @@ This project is a web-based application that transcribes audio files into text u
 - Simple and user-friendly web interface created with Streamlit.
 - Secure and scalable deployment on Heroku.
 
+## App Screenshot
+
+Here's how the app looks:
+
+![App Screenshot](app_screenshot.png)
+
 ---
 
 ## Getting Started
