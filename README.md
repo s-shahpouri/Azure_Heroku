@@ -23,6 +23,7 @@ To run this project locally, ensure you have the following installed:
 1. Clone the repository:
    ```bash
    git clone https://github.com/s-shahpouri/your-repo-name.git
+   ```bash
    cd your-repo-name
    
 2. Create and activate a virtual environment:
