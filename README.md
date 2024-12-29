@@ -20,66 +20,69 @@ To run this project locally, ensure you have the following installed:
 - [Azure SDK for Python](https://learn.microsoft.com/en-us/azure/developer/python/)
 
 ### Installation
+
 1. Clone the repository:
    ```bash
    git clone https://github.com/s-shahpouri/your-repo-name.git
-   ```bash
    cd your-repo-name
-   
+   ```
+
 2. Create and activate a virtual environment:
-  ```bash
-  python -m venv venv
-```bash
-  source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
 
-   
 3. Install the required packages:
-  ```bash
-  pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-   
-4. Set up your .env file:
-  - Create a .env file in the root directory.
-  - Add your Azure Speech-to-Text key and region:
+4. Set up your `.env` file:
+   - Create a `.env` file in the root directory.
+   - Add your Azure Speech-to-Text key and region:
+     ```
+     AZURE_SPEECH_KEY=your_azure_key
+     ```
 
-  ```bash
-  AZURE_SPEECH_KEY=your_azure_key
-
-   
+---
 
 ### Local Usage
 
 1. Run the Streamlit app:
-  ```bash
-streamlit run app.py
+   ```bash
+   streamlit run app.py
+   ```
 
-   
-2. Open the provided URL in your browser (e.g., http://localhost:8501).
+2. Open the provided URL in your browser (e.g., `http://localhost:8501`).
+
 3. Upload an audio file and click the "Transcribe" button to see the transcription.
+
+---
 
 ### Deployment
 
 1. Install the Heroku CLI and log in:
-  ```bash
-heroku login
+   ```bash
+   heroku login
+   ```
 
-   
 2. Create a Heroku app:
+   ```bash
+   heroku create your-app-name
+   ```
 
-  ```bash
-heroku create your-app-name
-
-   
 3. Set your environment variables on Heroku:
-  ```bash
-heroku config:set AZURE_SPEECH_KEY=your_azure_key AZURE_REGION=your_azure_region
+   ```bash
+   heroku config:set AZURE_SPEECH_KEY=your_azure_key AZURE_REGION=your_azure_region
+   ```
 
-   
 4. Push your code to Heroku:
-  ```bash
-git push heroku main
+   ```bash
+   git push heroku main
+   ```
 
-   
+---
 
 ## Built With
 
@@ -107,4 +110,3 @@ This project is licensed under the MIT License. See the LICENSE file for details
 * [Azure Speech Service Documentation](https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/)
 * Streamlit Documentation
 * Heroku Documentation
-
