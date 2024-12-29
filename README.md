@@ -28,13 +28,14 @@ To run this project locally, ensure you have the following installed:
 2. Create and activate a virtual environment:
   ```bash
   python -m venv venv
-  source venv/bin/activate
+  source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-
+   
 3. Install the required packages:
   ```bash
   pip install -r requirements.txt
 
+   
 4. Set up your .env file:
   - Create a .env file in the root directory.
   - Add your Azure Speech-to-Text key and region:
@@ -42,11 +43,15 @@ To run this project locally, ensure you have the following installed:
   ```bash
   AZURE_SPEECH_KEY=your_azure_key
 
+   
+
 ### Local Usage
 
 1. Run the Streamlit app:
   ```bash
 streamlit run app.py
+
+   
 2. Open the provided URL in your browser (e.g., http://localhost:8501).
 3. Upload an audio file and click the "Transcribe" button to see the transcription.
 
@@ -56,19 +61,23 @@ streamlit run app.py
   ```bash
 heroku login
 
+   
 2. Create a Heroku app:
 
   ```bash
 heroku create your-app-name
 
+   
 3. Set your environment variables on Heroku:
   ```bash
 heroku config:set AZURE_SPEECH_KEY=your_azure_key AZURE_REGION=your_azure_region
 
+   
 4. Push your code to Heroku:
   ```bash
 git push heroku main
 
+   
 
 ## Built With
 
