@@ -108,11 +108,3 @@ Contributions are welcome! Please fork the repository and create a pull request 
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
-
----
-
-## Acknowledgments
-
-* [Azure Speech Service Documentation](https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/)
-* Streamlit Documentation
-* Heroku Documentation
