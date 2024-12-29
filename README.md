@@ -28,7 +28,8 @@ To run this project locally, ensure you have the following installed:
 2. Create and activate a virtual environment:
   ```bash
   python -m venv venv
-  source venv/bin/activate  # On Windows: venv\Scripts\activate
+  source venv/bin/activate
+
 
 3. Install the required packages:
   ```bash
